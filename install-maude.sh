@@ -55,8 +55,8 @@ install_maude()
 	INSTALLED=true
 }
 
-## Add Maude path to Systems PATH
-##(only if the keyword isnt already in the PATH)
+##  Add Maude path to Systems PATH
+## (only if the keyword isnt already in the PATH)
 add_folder_to_path()
 {
 	if [ -z "$FOLDER" ]
@@ -132,7 +132,6 @@ EOL
 
 ## MAIN SCRIPT
 
-# FOLDER='$HOME/DiscoW/maude'
 KEYWORD='maude'
 ALIAS='maude'
 MAUDE="maude.linux64"
