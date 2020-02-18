@@ -18,8 +18,8 @@ mkdir -p -v "$backup_folder"
 
 # Dump the sql database
 # (change the user and database to yours)
-user = "drupal1"
-database = "drupal1"
+user="drupal1"
+database="drupal1"
 mysqldump -u "$user" -p "$database" > "$backup_folder/database.sql"
 
 # Change this to your drupal project's name
