@@ -1,2 +1,2 @@
-# Shell scripts
-All my shell scripts (mainly utilities)
+# Utility scripts
+All my utility scripts
