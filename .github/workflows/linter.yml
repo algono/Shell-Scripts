@@ -10,13 +10,12 @@ name: Lint Code Base
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions
 #
 
-#############################
-# Start the job on all push #
-#############################
+#############################################
+# Start the job on all push (or manual run) #
+#############################################
 on:
   push:
-    #branches-ignore:
-    #  - 'master'
+  workflow_dispatch:
 
 ###############
 # Set the Job #
