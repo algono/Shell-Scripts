@@ -49,5 +49,5 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_BASH: true
-          VALIDATE_PYTHON: true
+          VALIDATE_PYTHON_PYLINT: true
           VALIDATE_MARKDOWN: true
