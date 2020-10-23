@@ -8,13 +8,13 @@ copyToTmp()
 {
     mkdir -p "$TMP"
     cp "$1" "$TMP/$SRC"
-    cd "$TMP"
+    cd "$TMP" || exit
 }
 
 generate() 
 {
     echo "Generating file..."
-    spin -a $SRC $@
+    spin -a $SRC "$@"
 }
 
 compile() 
@@ -26,7 +26,7 @@ compile()
 runPan() 
 {
     echo "Running..."
-    ./pan $@
+    ./pan "$@"
 }
 
 run() 
@@ -53,8 +53,8 @@ clean()
 
 trace() 
 {
-    cd "$TMP"
-    spin -t -p $SRC $@
+    cd "$TMP" || exit
+    spin -t -p $SRC "$@"
 }
 
 fspin_help()

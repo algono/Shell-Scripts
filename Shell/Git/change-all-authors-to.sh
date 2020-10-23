@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$#" != 2 ]
 then
@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-read -d '' setVariables << EOF
+read -r -d '' setVariables << EOF
 CORRECT_NAME="$1"
 CORRECT_EMAIL="$2"
 EOF

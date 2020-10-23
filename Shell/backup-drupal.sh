@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 ## Script made by: Alejandro Gomez - algono - 11/02/2020
 

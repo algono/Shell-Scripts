@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$#" != 3 ]
 then
@@ -6,12 +6,15 @@ then
     exit 1
 fi
 
-read -d '' setVariables << EOF
+read -r -d '' setVariables << EOF
 OLD_EMAIL="$1"
 CORRECT_NAME="$2"
 CORRECT_EMAIL="$3"
 EOF
 
+# Disabled linter error because we actually want the variables to not expand (aka be replaced with their values)
+# (we want the "$VAR" to be literal, not changed to the value of the VAR variable)
+# shellcheck disable=SC2016
 checks='
 if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
 then

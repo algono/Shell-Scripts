@@ -1,4 +1,6 @@
-cat >> ~/.bashrc <<EOL
+#!/bin/sh
+
+cat >> "$HOME/.bashrc" <<EOL
 
 # Alias definitions
 # You may want to put all your additions into a separate file like
