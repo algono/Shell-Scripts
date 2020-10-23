@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC1090
 
 ## Script made by: Alejandro Gomez - algono - 23/02/2019
 
